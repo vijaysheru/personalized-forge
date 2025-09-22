@@ -59,7 +59,6 @@ export const ReviewFilters = ({ filters, onFiltersChange, properties, channels }
                 <SelectValue placeholder="All properties" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">All properties</SelectItem>
                 {properties.map((property) => (
                   <SelectItem key={property} value={property}>
                     {property}
@@ -76,7 +75,6 @@ export const ReviewFilters = ({ filters, onFiltersChange, properties, channels }
                 <SelectValue placeholder="All channels" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">All channels</SelectItem>
                 {channels.map((channel) => (
                   <SelectItem key={channel} value={channel}>
                     {channel}
@@ -93,7 +91,6 @@ export const ReviewFilters = ({ filters, onFiltersChange, properties, channels }
                 <SelectValue placeholder="All ratings" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">All ratings</SelectItem>
                 <SelectItem value="10">10 stars</SelectItem>
                 <SelectItem value="9">9+ stars</SelectItem>
                 <SelectItem value="8">8+ stars</SelectItem>
@@ -110,7 +107,6 @@ export const ReviewFilters = ({ filters, onFiltersChange, properties, channels }
                 <SelectValue placeholder="All statuses" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">All statuses</SelectItem>
                 <SelectItem value="published">Published</SelectItem>
                 <SelectItem value="pending">Pending</SelectItem>
                 <SelectItem value="approved">Approved for public</SelectItem>
